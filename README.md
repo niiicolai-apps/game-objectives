@@ -1,7 +1,42 @@
-# Vue 3 + Vite
+# Install
 
-This template should help get you started developing with Vue 3 in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+```bash
+$ npm install
+```
 
-## Recommended IDE Setup
+# Release
+1. Ensure 7zip is installed (https://www.7-zip.org/download.html)
+2. Set system env. variable: 
+```bash
+export PATH=$PATH:/c/Program\ Files/7-Zip
+```
+3. Run the release script:
+```bash
+$ bash release.sh
+```
+4. Create and publish a new release on https://github.com/niiicolai-apps/game-objectives/releases/new (Remember to include the zip created in step 3)
 
-- [VS Code](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+# Usage in development
+
+```bash
+$ npm run dev
+```
+
+# Usage in other projects
+
+## Install in other projects
+Remember to replace `#1.0.0` with the needed version.
+```bash
+npm install --save niiicolai-apps/game-objectives#1.0.0
+```
+
+## Update in other projects
+```bash
+npm update niiicolai-apps/game-objectives
+```
+
+## Create objectives
+
+```vue
+
+```
